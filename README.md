@@ -5,6 +5,7 @@ Collection of Docker images for things gateway.
 ### Usage
 
 ```
-docker build . --tag gateway 
-docker run gateway
+export ARCH=arm                           # or any alternatives like: debian 
+docker build $ARCH --tag gateway 
+docker run gateway --name gateway
 ```

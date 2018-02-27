@@ -1,7 +1,7 @@
 FROM node:slim
 
-RUN groupadd -g 9999 app && \
-    useradd -g app -s /bin/false -u 9999 app
+RUN groupadd -g 9999 app
+RUN useradd -g app -s /bin/false -u 9999 app
 
 RUN apt-get update
 RUN apt-get install -y libusb-1.0-0-dev libudev-dev git make g++ python
